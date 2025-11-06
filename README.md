@@ -40,10 +40,7 @@ An accompanying manual operation app has been developed to support manual interv
 ###### <h6 id="3">**安装步骤**</h6>
 
 1. 英伟达端部署代码可进行参考
-   
-   ```
    [https://github.com/Jiangzzzzl/Intelligent-assistance-system-for-blind-walking-based-on-YOLOv5.git](https://github.com/Jiangzzzzl/Yolov8_TensorRT)
-   ```
 
 2. 安装依赖
    
@@ -101,12 +98,8 @@ An accompanying manual operation app has been developed to support manual interv
 
 
 #### 2.
-![image](https://github.com/Jiangzzzzl/Intelligent-assistance-system-for-blind-walking-based-on-YOLOv5/blob/main/readme_picture/aliyun.jpg)
-![image](https://github.com/Jiangzzzzl/Intelligent-assistance-system-for-blind-walking-based-on-YOLOv5/blob/main/readme_picture/llm.png)
 
 #### 3.
-
-
 
 #### 4.手机APP端
 
@@ -115,7 +108,7 @@ An accompanying manual operation app has been developed to support manual interv
 
 
 #### 6.最终成品状态
-![image]([https://github.com/Jiangzzzzl/Intelligent-assistance-system-for-blind-walking-based-on-YOLOv5/blob/main/readme_picture/show2.jpg](https://github.com/Jiangzzzzl/YOLOv8Seg-Material-Dispensing-Recognition-and-Operation-Analysis/blob/master/%E6%92%92%E6%96%99%E6%95%B4%E4%BD%93.jpg))
+![image]([https://github.com/Jiangzzzzl/YOLOv8Seg-Material-Dispensing-Recognition-and-Operation-Analysis/blob/master/%E6%92%92%E6%96%99%E6%95%B4%E4%BD%93.jpg])
 
 
 ### <h3 id="7">演示视频</h3>
