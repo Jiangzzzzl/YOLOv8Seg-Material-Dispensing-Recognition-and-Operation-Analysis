@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context=".MainActivity">
+
+    <!-- 顶部标题栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:background="#2196F3"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="散状物料智能运维分析系统"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <!-- CoreXY结构图示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_margin="10dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CoreXY 结构示意图"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#2196F3" />
+
+        <!-- CoreXY结构图示 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E3F2FD">
+
+            <!-- X轴导轨 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="#757575" />
+
+            <!-- Y轴导轨 -->
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#757575" />
+
+            <!-- 电机1 (左下角) -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/kaiguan"
+                android:background="#2196F3"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motor1"
+                android:textSize="10sp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp" />
+
+            <!-- 电机2 (右下角) -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/kaiguan"
+                android:background="#2196F3"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motor2"
+                android:textSize="10sp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp" />
+
+            <!-- 惰轮 O1 (移动平台左上角) -->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/kaiguan"
+                android:background="#FF9800"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O1"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="32dp" />
+
+            <!-- 惰轮 O2 (移动平台右上角) -->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/kaiguan"
+                android:background="#FF9800"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O2"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="32dp" />
+
+            <!-- 惰轮 O3 (移动平台左下角) -->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/kaiguan"
+                android:background="#FF9800"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O3"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="32dp" />
+
+            <!-- 惰轮 O4 (移动平台右下角) -->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/kaiguan"
+                android:background="#FF9800"
+                android:elevation="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O4"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp" />
+
+            <!-- 移动平台 -->
+            <ImageView
+                android:id="@+id/move_head"
+                android:layout_width="33dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#F44336"
+                android:elevation="4dp"
+                android:src="@drawable/kaiguan" />
+
+            <!-- 位移说明 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΔX"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:textColor="#2196F3" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΔY"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="10dp"
+                android:textColor="#2196F3" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-ΔX"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#2196F3" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-ΔY"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="10dp"
+                android:textColor="#2196F3" />
+
+            <!-- 皮带路径示意 -->
+            <!-- Motor1 到 O3 -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="33dp"
+                android:background="#4CAF50" />
+            
+            <!-- O3 到 O1 -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="#4CAF50" />
+            
+            <!-- O1 到 O2 -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="55dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4CAF50" />
+            
+            <!-- O2 到 Motor2 -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="33dp"
+                android:layout_marginEnd="50dp"
+                android:background="#4CAF50" />
+            
+            <!-- Motor2 到 O4 -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="50dp"
+                android:layout_marginEnd="33dp"
+                android:background="#FFC107" />
+            
+            <!-- O4 到 O2 -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="#FFC107" />
+            
+            <!-- O2 到 O1 -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFC107" />
+            
+            <!-- O1 到 Motor1 -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="33dp"
+                android:layout_marginStart="50dp"
+                android:background="#FFC107" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- 控制按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_margin="10dp"
+        android:elevation="4dp">
+
+        <!-- 方向控制按钮 (十字布局) -->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- 上按钮 (前) -->
+            <Button
+                android:id="@+id/btn_forward"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/rounded_button"
+                android:elevation="4dp"
+                android:drawableTop="@drawable/arrow_up"
+                android:paddingTop="15dp" />
+
+            <!-- 下按钮 (后) -->
+            <Button
+                android:id="@+id/btn_backward"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/rounded_button"
+                android:elevation="4dp"
+                android:drawableTop="@drawable/arrow_down"
+                android:paddingTop="15dp" />
+
+            <!-- 左按钮 -->
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|start"
+                android:background="@drawable/rounded_button"
+                android:elevation="4dp"
+                android:drawableTop="@drawable/arrow_left"
+                android:paddingTop="15dp" />
+
+            <!-- 右按钮 -->
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/rounded_button"
+                android:elevation="4dp"
+                android:drawableTop="@drawable/arrow_right"
+                android:paddingTop="15dp" />
+
+        </FrameLayout>
+
+        <!-- 功能按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_stop"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="停止"
+                android:textSize="16sp"
+                android:background="@drawable/btn_stop_rounded"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="开始"
+                android:textSize="16sp"
+                android:background="@drawable/btn_start_rounded"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+            <ToggleButton
+                android:id="@+id/btn_power"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textOn="关闭"
+                android:textOff="开启"
+                android:textSize="16sp"
+                android:checked="false"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_button_orange"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 状态显示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_margin="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设备状态"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#2196F3" />
+
+        <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="待机中..."
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#757575" />
+
+    </LinearLayout>
+
+</LinearLayout>
