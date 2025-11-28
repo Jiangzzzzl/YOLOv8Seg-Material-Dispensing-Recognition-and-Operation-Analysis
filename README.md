@@ -56,12 +56,10 @@ An accompanying manual operation app has been developed to support manual interv
 
 1.数据集准备
 
-收集项目相关图片，利用labbleme等软件进行标注。
-
-此项目标注类别为常见的21类障碍物，数据集和标签文件对应位置为：
+收集项目相关图片，利用labbleme软件进行标注。
 
 ```
-├─road
+├─black
     ├─images
     │  ├─test
     │  └─train
@@ -145,5 +143,5 @@ CSDN:柃茶柒fffffff
 
 ### <h3 id="12">鸣谢</h3>
 
-- [https://github.com/ultralytics/yolov5](https://docs.ultralytics.com/zh/models/yolov8/)
+- [https://docs.ultralytics.com/zh/models/yolov8/](https://docs.ultralytics.com/zh/models/yolov8/)
 
